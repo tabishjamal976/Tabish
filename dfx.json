@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "breakout_game_backend": {
+      "main": "src/breakout_game_backend/main.mo",
+      "type": "motoko"
+    },
+    "breakout_game_frontend": {
+      "dependencies": [
+        "breakout_game_backend"
+      ],
+      "source": [
+        "src/breakout_game_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "breakout_game_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
